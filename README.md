@@ -212,9 +212,26 @@ curl -X POST http://localhost:3001/api/init
 ```bash
 npm run dev      # Executar em desenvolvimento
 npm run build    # Build para produção
-npm start        # Executar em produção
+npm start        # Executar em produção (usa server.js para Render)
 npm run lint     # Verificar código
 ```
+
+## 🚀 Deploy no Render
+
+Este backend está configurado para deploy no Render. Veja o arquivo `../DEPLOY_RENDER.md` na raiz do projeto para instruções completas.
+
+### Configuração Rápida
+
+1. Crie um novo Web Service no Render
+2. Configure:
+   - **Root Directory**: `backend` (ou deixe vazio se o repositório for só do backend)
+   - **Build Command**: `npm install && npm run build`
+   - **Start Command**: `npm start`
+3. Adicione as variáveis de ambiente:
+   - `DATABASE_URL`
+   - `JWT_SECRET`
+   - `ALLOWED_ORIGIN` (URL do frontend)
+   - `NODE_ENV=production`
 
 ## 🔧 Desenvolvimento
 
