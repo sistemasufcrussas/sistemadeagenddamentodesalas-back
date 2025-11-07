@@ -1,0 +1,35 @@
+{
+  "name": "siru-backend",
+  "version": "1.0.0",
+  "description": "Backend para Sistema de Reservas Universitário",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next dev -p 3001",
+    "build": "next build",
+    "start": "node server.js",
+    "lint": "next lint",
+    "init-db": "node scripts/init-db-commonjs.js",
+    "setup-env": "powershell -ExecutionPolicy Bypass -File setup-env.ps1"
+  },
+  "dependencies": {
+    "@types/node": "^20.8.0",
+    "bcrypt": "^6.0.0",
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "jsonwebtoken": "^9.0.2",
+    "next": "^14.0.0",
+    "nodemailer": "^6.9.7",
+    "pg": "^8.11.3",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "typescript": "^5.2.0"
+  },
+  "devDependencies": {
+    "@types/bcryptjs": "^2.4.5",
+    "@types/cors": "^2.8.15",
+    "@types/jsonwebtoken": "^9.0.4",
+    "@types/nodemailer": "^6.4.14",
+    "@types/pg": "^8.10.7"
+  }
+}
